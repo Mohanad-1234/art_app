@@ -46,6 +46,9 @@ jobs:
             uses-material-design: true
           EOF
 
+      - name: Reconstruct Android Project Files
+        run: flutter create . --platforms=android
+
       - name: Install dependencies
         run: flutter pub get
 
